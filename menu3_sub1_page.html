@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>진영이의 성장 일기</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+        <meta charset="UTF-8" />
+        <style type="text/css">
+            .line{border-color:green;border-style:solid;border-width:thin; background-color: green;}
+            .status{text-align:center;}
+            @font-face{font-family:"font"; src:url("font/BMEULJIROTTF.ttf")}
+            @font-face{font-family:"Titlestyle-font"; src:url("font/BMEuljiro10yearslater.ttf")}
+            @font-face{font-family:"stylefont1"; src:url("font/BMDOHYEON_ttf.ttf")}
+            @font-face{font-family:"textfont"; src:url("font/BMHANNAAir_ttf.ttf")}
+            .topfont{font-family:"font";}
+            .textfont{font-family:"textfont";text-align:left;position:relative; left:25%;}
+            .stylefont{color:green; font-family:"Titlestyle-font";font-size: 50pt;}
+            #backgroundimg1{background-image:url(image/background1.JPG); background-repeat:repeat-x;background-position: bottom;}
+            #nowpage{background-color:white;}
+            #nowpage1{background-color:yellow;}
+            #main_img{width:"10";height:"10";position:relative;top:50px;}
+            a{text-decoration:none;color:black;}    /*링크 아래 연결 선 없애기 위함*/
+            body,html{margin:0;padding:0;height:100%;} /*화면에 배경 꽉채우기 위함*/
+            body{background-color:rgb(186,245,186);overflow-x: hidden;}
+            header{background-color:white;font-weight:bold;font-size: 40pt;text-align:center; padding:100px;}
+            nav a:hover{text-decoration:underline; color:blue;}
+            div{margin:0 auto;width:88%; height:2100px;border-color:green; border-style:solid;border-radius: 30pt;
+                background-color: rgb(232, 247, 232);}
+            footer{clear:both;text-align:right; margin:5px;}
+
+            .topstatus{z-index:2;position:fixed; right:0px; top:35px;}
+            .firststatus{z-index:3;position:fixed; right:0px; top:115px;}
+            .secondstatus{z-index:4;position:fixed; right:0px; top:195px;}
+            .thirdstatus{z-index:5;position:fixed; right:0px; top:275px;}
+            .fourthstatus{z-index:6;position:fixed; right:0px; top:355px;}
+            .fifthstatus{z-index:7;position:fixed; right:0px; top:435px;}
+
+            #init{position:absolute; left:25%;top:800px;margin:2px;}
+            #init1{position:absolute; left:25%;top:1100px;margin:2px;}
+            #init2{position:absolute; left:25%;top:1400px;margin:2px;}
+            #init3{position:absolute; left:25%;top:1700px;margin:2px;}
+            #init4{position:absolute; left:25%;top:2000px;margin:2px;}
+            .imgstatus{vertical-align:middle;}
+            .blue{color:blue;}
+            .toptextfont{font-family:"stylefont1";}
+            ol li a:hover{text-decoration:underline; color:green;}
+            ol li{list-style-type:none;}
+            .menustyle {width:15%;height:100%;border : 0;margin: 1 1 1 1; padding: 0 0 0 0;float: left;position:relative;left:19%;}
+            ul {list-style:none; margin:0; padding:0;height:100%;position:relative;top:-10;font-size:15pt;text-align:center;}
+            .menu{position:relative;top:50px;}
+            .linkstyle{position:relative;left:50%;font-size: 20pt;font-weight:bold;text-decoration:none;color:black; font-family:"textfont";}
+            .font2{position:absolute; left:2%;top:10px;font-family:"stylefont1"; font-size:15px;}
+        </style>
+    </head>
+     <body id="top">
+        <a href="#top"><img src="image/top_button.GIF" class="topstatus" width=80px; height=80px alt="위로 이동"></a>
+        <a href="#find01"><img src="image/1_.png" class="firststatus" width=80px; height=80px alt="스터디그룹으로 이동"></a>
+        <a href="#find02"><img src="image/2_.png" class="secondstatus" width=80px; height=80px alt="IT's You로 이동"></a>
+        <a href="#find03"><img src="image/3_.png" class="thirdstatus" width=80px; height=80px alt="코딩봉사로 이동"></a>
+        <a href="#find04"><img src="image/4_.png" class="fourthstatus" width=80px; height=80px alt="Github로 이동"></a>
+        <a href="#find05"><img src="image/5_.png" class="fifthstatus" width=80px; height=80px alt="프로젝트로 이동"></a>
+
+        <header id="backgroundimg1">
+            <span class="font2">Background-color change:&nbsp;<button onclick="changeColor('top','rgb(186,245,186)');">origin</button>&nbsp;
+            <button onclick="changeColor('top','YellowGreen');">YellowGreen</button><br/><br/>
+            Inner Box color change:&nbsp;<button onclick="changeColor('innerBox','rgb(232, 247, 232)');">origin</button>&nbsp;
+            <button onclick="changeColor('innerBox','Azure');">Azure</button></span>
+            <a class="topfont" href="main.html">진영이의 <span class="stylefont">성장 </span>일기</a><img src="image/cocomong.JPG" id="main_img">
+        </header>
+
+            <nav>
+                <ul>
+                    <hr class="line"/>
+                    <li class="menustyle"><a class="topfont" href="menu1_page.html" title="Who am I?" >Who am I?</a></li>
+                    <li class="menustyle"><a class="topfont" href="menu2_page.html" title="My major">My major</a></li>
+                    <li class="menustyle"><a class="topfont" href="menu3_page.html" title="My study"><strong id="nowpage">My study</strong></a></li>
+                    <li class="menustyle"><a class="topfont" href="menu4_page.html" title="Contact">Contact</a></li>
+                </ul>
+            </nav>
+        <br/>
+        <br/>
+        <hr class="line"/>
+        <p><br/></p>
+
+        <div id="innerBox">
+            <p><br/></p>
+            <nav>
+                <ul class="menu">
+                <hr width="60%" class="line"/>
+                    <li class="menustyle"><a class="linkstyle" href="menu3_page.html" title="시간 흐름 기준으로 보는 나의 study">시간별</a></li>
+                    <li class="menustyle"><a class="linkstyle" href="menu3_sub1_page.html" title="주제를 기준으로 보는 나의 study"><strong id="nowpage1">주제별</strong></a></li>
+                    <li class="menustyle"><a class="linkstyle" onclick="check()" href="menu3_sub2_page.html" title="나의 study diary">my diary</a></li>
+                </ul>
+            </nav>
+            <p><br/></p>
+            <p><br/></p>
+            <hr width="60%" class="line"/>
+            <p><br/></p>
+            
+
+
+             
+            <ol>
+                <br/>
+                <li id="init" class="toptextfont"><img src="image/num1.JPG" width="80" class="imgstatus" cellspacing="5px"><a id="find01"></a>&nbsp;스터디그룹</li>
+                <p><br/></p>
+                <p><br/></p>
+                <p><br/></p>
+                <ul>
+                <br/>
+                    <li class="textfont">1학년 2학기:주식 스터디 참여 (<a class="blue" target="_blank" href="https://drive.google.com/drive/folders/1CMmCCaNKE5Z0DL8NDhtEY3z4qE1RZah6?usp=sharing">관련 링크</a>)</li>
+                    <li class="textfont">1학년 겨울 방학:웹프로그래밍 스터디 참여 (<a class="blue" target="_blank" href="https://github.com/Websookmyung">관련 링크</a>)</li>
+                    <li class="textfont">2학년 1학기:자바와 데이터구조 스터디 참여 (<a class="blue" target="_blank" href="https://github.com/future-developerss">관련 링크</a>)</li>
+                </ul>
+                <br/>
+                
+                <br/>
+                <br/>
+                <br/>
+                <li id="init1" class="toptextfont"><img src="image/num2.JPG" width="80" class="imgstatus" cellspacing=5px><a id="find02"></a>&nbsp;IT'S U</li>
+                <p><br/></p>
+                <p><br/></p>
+                <p><br/></p>
+
+                <ul><br/>
+                    <li class="textfont">(<a class="blue" target="_blank" href="https://snowe.sookmyung.ac.kr/club/front/main/index/mainIndex.do?clubId=ITleader">링크: IT'S U 홈페이지</a>)</li>
+                    <li class="textfont">하는 일: 교내 IT 서비스 모니터리 및 시범 테스트, 자체 세미나 및 특강</li>
+                    <li class="textfont">맡은 일: 잇츠유의 디자인팀원으로 웹진 디자인 및 제작과 교내 IT 서비스 점검 및 확인 모니터링을 하고 있다.</li>
+                </ul><br/>
+                
+                <br/>
+                <br/>
+                <li id="init2" class="toptextfont"><img src="image/num3.JPG" width="80" class="imgstatus" cellspacing=5px><a id="find03"></a>&nbsp;코딩봉사</li>
+                <p><br/></p>
+                <p><br/></p>
+                <p><br/></p>
+                <ul><br/><br/>
+                    <li class="textfont">하는 일: IT공학과 학회 중 하나로, 숙명여자대학교 재학생을 대상으로 코딩 봉사를 한다.</li>
+                    <li class="textfont">맡은 일: 2021-1학기, python 기초에 대해 코딩 교육봉사를 진행하고 있다.</li>
+                    <li class="textfont">2021 코딩봉사 (<a class="blue" target="_blank" href="https://github.com/firststudy-python">관련 링크</a>)</li>
+                </ul><br/>
+                <p><br/></p>
+                <p><br/></p>
+
+                <li id="init3" class="toptextfont"><img src="image/num4.JPG" width="80" class="imgstatus" cellspacing=5px><a id="find04"></a>&nbsp;GITHUB</li>
+                <p><br/></p>
+                <p><br/></p>
+                <p><br/></p>
+                <ul><br/>
+                    <li class="textfont">(<a class="blue" target="_blank" href="https://github.com/zhenying2">내 GITHUB 링크</a>)</li>
+                </ul><br/>
+                <p><br/></p>
+
+                <br/>
+                <br/>
+                <li id="init4" class="toptextfont"><img src="image/num5.JPG" width="80" class="imgstatus" cellspacing=5px><a id="find05"></a>&nbsp;프로젝트</li>
+                <p><br/></p>
+                <p><br/></p>
+                <p><br/></p>
+
+                <ul><br/><br/>
+                    <li class="textfont">2021 1학기에 IT공학과에서 진행되는 IPS(<strong>I</strong>T <strong>P</strong>roject competition of <strong>S</strong>ookmyung)에 참여 예정이다.</li>
+                </ul><br/>
+                
+            </ol> 
+        </div>
+        
+        <p><br/></p>
+        <p><br/></p>
+        <p><br/></p>
+        <p><br/></p>
+
+        <script type="text/javascript">
+            function check(){
+                var asking="My diary 게시판은 '진영이의 일기장'으로 운영되는 게시판입니다.\n 비밀 유지를 약속하며, 게시판으로 입장하는 것에 동의하십니까?";
+                var type;
+                type=confirm(asking);
+
+                if(type == true){
+                    window.open("menu3_sub2_page.html"); 
+                }
+                else{
+                    window.open("menu3_sub1_page.html"); 
+                }
+            }
+
+            function changeColor(id,color){
+                document.getElementById(id).style.background=color;
+            }  
+        </script>
+        <footer class="topfont">&#169;copyright는 작성자 김진영에게 있습니다.<br/>배경 음악 및 음악에 대한 저작권은 모두 가수 및 관련업계에 있습니다.</footer>
+    </body>
+</html>

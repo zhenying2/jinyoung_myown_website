@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>진영이의 성장 일기</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+        <meta charset="UTF-8" />
+        <style type="text/css">
+            .line{border-color:green;border-style:solid;border-width:thin; background-color: green;}
+            .status{text-align:center;}
+            .topstatus{z-index:2;position:fixed; right:0px; top:35px;}
+            @font-face{font-family:"font"; src:url("font/BMEULJIROTTF.ttf")}
+            @font-face{font-family:"Titlestyle-font"; src:url("font/BMEuljiro10yearslater.ttf")}
+            @font-face{font-family:"Highlight-font";src:url("font/BMDOHYEON_ttf.ttf")}
+            .topfont{font-family:"font";}
+            .font{font-family:"font";}
+            .font1{font-family:"font";font-size: 25px;}
+            .font2{position:absolute; left:2%;top:10px;font-family:"Highlight-font";font-size:15px;}
+            .stylefont{color:green; font-family:"Titlestyle-font";font-size: 50pt;}
+            .highlightfont{font-family:"Highlight-font";color:green;}
+            #backgroundimg1{background-image:url(image/background1.JPG); background-repeat:repeat-x;background-position: bottom;}
+            #main_img{width:"10";height:"10";position:relative;top:50px;}
+            #profile_img{border-radius:70%; padding:25px;}
+            a{text-decoration:none;color:black;}    /*링크 아래 연결 선 없애기 위함*/
+            body,html{margin:0;padding:0;height:100%;} /*화면에 배경 꽉채우기 위함*/
+            body{background-color:rgb(186,245,186);overflow-x: hidden;}
+            header{background-color:white;font-weight:bold;font-size: 40pt;text-align:center; padding:100px;}
+
+            nav a:hover{text-decoration:underline; color:blue;}
+            div{margin:0 auto;width:100%; border:5px; border-color:green; background-color: rgb(232, 247, 232);}
+            figure figcaption{font-size: 20;}
+            footer{clear:both;text-align:right; margin:5px;}
+
+            .menustyle {width:15%;height:100%;border : 0;margin: 1 1 1 1; padding: 0 0 0 0;float: left;position:relative;left:19%;}
+            ul {list-style:none; margin:0; padding:0;height:100%;position:relative;top:-10;font-size:15pt;text-align:center;}
+        </style>
+    </head>
+
+    <!--main page가 로드 완료되면 바로 이미지 슬라이드 시작-->
+    <body id="top" onload="changeImage()">
+        <a href="#top"><img src="image/top_button.GIF" class="topstatus" width=80px; height=80px alt="위로 이동"></a>        
+
+        <header id="backgroundimg1">
+            <span class="font2">Background-color change:&nbsp;<button onclick="changeColor('top','rgb(186,245,186)');">origin</button>&nbsp;
+            <button onclick="changeColor('top','YellowGreen');">YellowGreen</button><br/><br/>
+            Inner Box color change:&nbsp;<button onclick="changeColor('innerBox','rgb(232, 247, 232)');">origin</button>&nbsp;
+            <button onclick="changeColor('innerBox','Azure');">Azure</button></span>
+
+            <a class="topfont" href="main.html">진영이의 <span class="stylefont">성장 </span>일기</a><img src="image/cocomong.JPG" id="main_img">
+        </header>
+            <nav>
+            <hr class="line"/>
+                <ul>
+                    <li class="menustyle"><a class="topfont" href="menu1_page.html" title="Who am I?" >Who am I?</a></li>
+                    <li class="menustyle"><a class="topfont" href="menu2_page.html" title="My major">My major</a></li>
+                    <li class="menustyle"><a class="topfont" href="menu3_page.html" title="My study">My study</a></li>
+                    <li class="menustyle"><a class="topfont" href="menu4_page.html" title="Contact">Contact</a></li>
+                </ul>
+            </nav>
+        <br/>
+        <br/>
+        <hr class="line"/>
+
+        <p><br/></p>
+        <p><br/></p>
+        <div id="innerBox" class="status">
+            <p><br/></p>
+            <p><br/></p>
+            <p><br/></p>
+            <img src="image/profile1.jpg" id="mainImage" width="30%" alt="내사진"/>
+            <p><br/></p>
+            <p><br/></p>
+            <p><br/></p>
+            <p class="font1">
+                안녕하세요, 저는 김진영입니다.<br/>
+                숙명여자대학교 <span class="highlightfont">IT공학과</span>에 재학 중이며, <span class="highlightfont">통계학</span>을 복수전공하고 있습니다.<br/>
+                전공 관련 관심 분야는 빅데이터/데이터분석입니다. <br/>
+                문의/연락할 사항이 있으시다면,  <strong class="highlightfont"> Contact </strong> 게시판에 남겨 주시면 됩니다.<p><br/></p>
+            </p>
+            <p><br/></p>
+            <p><br/></p>
+            <p><br/></p>
+        </div>
+        <script type="text/javascript">
+            var myImage = document.getElementById("mainImage");
+            var imageArray = [ "image/profile1.jpg", "image/profile3.jpg", "image/profile4.jpg","image/profile2.jpg"];
+            var imageIndex = 0;
+
+            //setTimeout함수를 이용해, 이미지가 자동으로 변하도록 구현
+            function changeImage() {
+                myImage.setAttribute("src", imageArray[imageIndex]);
+                imageIndex++;
+                if (imageIndex >= imageArray.length) {
+                    imageIndex = 0;
+                }
+                setTimeout(changeImage, 3000); //3초마다 이미지 변경
+            }
+
+            function changeColor(id,color){
+                document.getElementById(id).style.background=color;
+            }
+
+        </script>
+        
+        <p><br/></p>
+        <p><br/></p>
+        <p><br/></p>
+        <p><br/></p>
+        <p><br/></p>
+        <p><br/></p>
+        <p><br/></p>
+        <p><br/></p>
+        <footer class="font">&#169;copyright는 작성자 김진영에게 있습니다. <br/>배경 음악 및 음악에 대한 저작권은 모두 가수 및 관련업계에 있습니다.</footer>
+    </body>
+
+</html>

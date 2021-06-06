@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>진영이의 성장 일기</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+        <meta charset="UTF-8" />
+        <style type="text/css">
+            .line{border-color:green;border-style:solid;border-width:thin; background-color: green;}
+            .status{text-align:center;}
+            .imgstatus{vertical-align:middle;}
+            @font-face{font-family:"font"; src:url("font/BMEULJIROTTF.ttf")}
+            @font-face{font-family:"Titlestyle-font"; src:url("font/BMEuljiro10yearslater.ttf")}
+            @font-face{font-family:"stylefont1"; src:url("font/BMDOHYEON_ttf.ttf")}
+            @font-face{font-family:"textfont"; src:url("font/BMHANNAAir_ttf.ttf")}
+            .topfont{font-family:"font";}
+            .stylefont{color:green; font-family:"Titlestyle-font";font-size: 50pt;}
+            #backgroundimg1{background-image:url(image/background1.JPG); background-repeat:repeat-x;background-position: bottom;}
+            #nowpage{background-color:white;}
+            #nowpage1{background-color:yellow;}
+            #main_img{width:"10";height:"10";position:relative;top:50px;}
+            a{text-decoration:none;color:black;}    /*링크 아래 연결 선 없애기 위함*/
+            body,html{margin:0;padding:0;height:100%;} /*화면에 배경 꽉채우기 위함*/
+            body{background-color:rgb(186,245,186);overflow-x: hidden;}
+            header{background-color:white;font-weight:bold;font-size: 40pt;text-align:center; padding:100px;}
+            nav a:hover{text-decoration:underline; color:blue;}
+            div{margin:0 auto;width:88%; height:1400px;border-color:green; border-style:solid;border-radius: 30pt;
+                background-color: rgb(232, 247, 232);}
+            footer{clear:both;text-align:right; margin:5px;}
+  
+            #position0{position:absolute; left:38%;top:610px;margin:2px;}
+            .menustyle {width:15%;height:100%;border : 0;margin: 1 1 1 1; padding: 0 0 0 0;float: left;position:relative;left:19%;}
+            .menustyle1 {width:15%;height:100%;border : 0;margin: 1 1 1 1; padding: 0 0 0 0;float: left;position:relative;left:7%;}
+            ul li a:hover{text-decoration:underline; color:blue;}
+            ul {list-style:none; margin:0; padding:0;height:100%;position:relative;top:-10;font-size:15pt;text-align:center;}
+            .menu{position:relative;top:50px;}
+            .linkstyle{position:relative;left:50%;font-size: 20pt;font-weight:bold;text-decoration:none;color:black; font-family:"textfont";}
+            .toptextfont1{font-family:"stylefont1";float:left;margin-top:20px;padding:3%;}
+            #img1{position:absolute; left:3%;top:690px;margin:2px;}
+            #img2{position:absolute; left:20%;top:690px;margin:2px;}
+            #img3{position:absolute; left:40%;top:690px;margin:2px;}
+            #img4{position:absolute; left:60%;top:690px;margin:2px;}
+            #img5{position:absolute; left:80%;top:690px;margin:2px;}
+            .iframe{overflow:scroll; position:absolute; top:1000px;left:25%; margin:2px;}
+            .font2{position:absolute; left:2%;top:10px;font-family:"stylefont1"; font-size:15px;}
+        </style>
+    </head>
+    <body>
+
+        <header id="backgroundimg1">
+            <span class="font2">Background-color change:&nbsp;<button onclick="changeColor('top','rgb(186,245,186)');">origin</button>&nbsp;
+            <button onclick="changeColor('top','YellowGreen');">YellowGreen</button><br/><br/>
+            Inner Box color change:&nbsp;<button onclick="changeColor('innerBox','rgb(232, 247, 232)');">origin</button>&nbsp;
+            <button onclick="changeColor('innerBox','Azure');">Azure</button></span>
+            <a class="topfont" href="main.html">진영이의 <span class="stylefont">성장 </span>일기</a><img src="image/cocomong.JPG" id="main_img">
+        </header>
+
+            <nav>
+                <ul>
+                    <hr class="line"/>
+                    <li class="menustyle"><a class="topfont" href="menu1_page.html" title="Who am I?" >Who am I?</a></li>
+                    <li class="menustyle"><a class="topfont" href="menu2_page.html" title="My major">My major</a></li>
+                    <li class="menustyle"><a class="topfont" href="menu3_page.html" title="My study"><strong id="nowpage">My study</strong></a></li>
+                    <li class="menustyle"><a class="topfont" href="menu4_page.html" title="Contact">Contact</a></li>
+                </ul>
+            </nav>
+        <br/>
+        <br/>
+        <hr class="line"/>
+        <p><br/></p>
+
+        <div id="innerBox">
+            <p><br/></p>
+            <nav>
+                <ul class="menu">
+                <hr width="60%" class="line"/>
+                    <li class="menustyle"><a class="linkstyle" href="menu3_page.html" title="시간 흐름 기준으로 보는 나의 study">시간별</a></li>
+                    <li class="menustyle"><a class="linkstyle" href="menu3_sub1_page.html" title="주제를 기준으로 보는 나의 study">주제별</a></li>
+                    <li class="menustyle"><a class="linkstyle" onclick="check()" href="menu3_sub2_page.html" title="나의 study diary"><strong id="nowpage1">my diary</strong></a></li>
+                </ul>
+            </nav>
+            <p><br/></p>
+            <p><br/></p>
+            <hr width="60%" class="line"/>
+            <p><br/></p>
+            <p><br/></p>
+            <p><br/></p>
+            <p><br/></p>
+            <p><br/></p>
+            <nav>    
+            <ul>
+                <li class="menustyle1"><a class="linkstyle" href="text/studygroup.txt" target="link"> 1. 스터디 그룹 </a></li>
+                <li class="menustyle1"><a class="linkstyle" href="text/it'su.txt" target="link"> 2. IT'S U </a></li>
+                <li class="menustyle1"><a class="linkstyle" href="text/comcode.txt" target="link"> 3. 코딩 봉사 </a></li>
+                <li class="menustyle1"><a class="linkstyle" href="text/github.txt" target="link"> 4. GITHUB </a></li>
+                <li class="menustyle1"><a class="linkstyle" href="text/project.txt" target="link"> 5. 프로젝트 </a></li>
+            </ul>
+            </nav>
+            <p><br/></p>
+            <p><br/></p>
+            <iframe class="iframe" src="" name="link" width="50%" height="400"></iframe>
+        </div>
+        
+        <p><br/></p>
+        <p><br/></p>
+        <p><br/></p>
+        <p><br/></p>
+
+         <script type="text/javascript">
+            function check(){
+                var asking="My diary 게시판은 '진영이의 일기장'으로 운영되는 게시판입니다.\n 비밀 유지를 약속하며, 게시판으로 입장하는 것에 동의하십니까?";
+                var type;
+                type=confirm(asking);
+
+                if(type == true){
+                    window.open("menu3_sub2_page.html");                    
+                }
+                else{
+                    window.open("menu3_page.html"); 
+                }
+            }
+
+            function changeColor(id,color){
+                document.getElementById(id).style.background=color;
+            }  
+        </script>
+        <footer class="topfont">&#169;copyright는 작성자 김진영에게 있습니다.<br/>배경 음악 및 음악에 대한 저작권은 모두 가수 및 관련업계에 있습니다.</footer>
+    </body>
+</html>

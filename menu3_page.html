@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>진영이의 성장 일기</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+        <meta charset="UTF-8" />
+        <style type="text/css">
+            .line{border-color:green;border-style:solid;border-width:thin; background-color: green;}
+            .status{text-align:center;}
+            @font-face{font-family:"font"; src:url("font/BMEULJIROTTF.ttf")}
+            @font-face{font-family:"Titlestyle-font"; src:url("font/BMEuljiro10yearslater.ttf")}
+            @font-face{font-family:"stylefont1"; src:url("font/BMDOHYEON_ttf.ttf")}
+            @font-face{font-family:"textfont"; src:url("font/BMHANNAAir_ttf.ttf")}
+            .topfont{font-family:"font";}
+            .stylefont{color:green; font-family:"Titlestyle-font";font-size: 50pt;}
+            #backgroundimg1{background-image:url(image/background1.JPG); background-repeat:repeat-x;background-position: bottom;}
+            #nowpage{background-color:white;}
+            #nowpage1{background-color:yellow;}
+            #main_img{width:"10";height:"10";position:relative;top:50px;}
+            a{text-decoration:none;color:black;}    /*링크 아래 연결 선 없애기 위함*/
+            body,html{margin:0;padding:0;height:100%;} /*화면에 배경 꽉채우기 위함*/
+            body{background-color:rgb(186,245,186);overflow-x: hidden;}
+            header{background-color:white;font-weight:bold;font-size: 40pt;text-align:center; padding:100px;}
+            nav a:hover{text-decoration:underline; color:blue;}
+            div{margin:0 auto;width:88%; height:5500px;border-color:green; border-style:solid;border-radius: 30pt;
+                background-color: rgb(232, 247, 232);}
+            footer{clear:both;text-align:right; margin:5px;}
+
+            .topstatus{z-index:2;position:fixed; right:0px; top:35px;}
+            .firststatus{z-index:3;position:fixed; right:0px; top:115px;}
+            .secondstatus{z-index:4;position:fixed; right:0px; top:195px;}
+            .thirdstatus{z-index:5;position:fixed; right:0px; top:275px;}
+
+            .menustyle {width:15%;height:100%;border : 0;margin: 1 1 1 1; padding: 0 0 0 0;float: left;position:relative;left:19%;}
+            ul {list-style:none; margin:0; padding:0;height:100%;position:relative;top:-10;font-size:15pt;text-align:center;}
+            .menu{position:relative;top:50px;}
+            .linkstyle{position:relative;left:50%;font-size: 20pt;font-weight:bold;text-decoration:none;color:black; font-family:"textfont";}
+            .position{position:relative;right:510px;top:80px;}
+            .subtitle{font-family:"font";font-size:23px;font-weight:bold;float:left;}
+            .verticalLine {position:relative;left:50%; border-left: thick solid green;float:left;height:5200px;}
+            .subcontent{font-family:"textfont";float:left;}
+            .blue{color:blue;}
+            .font2{position:absolute; left:2%;top:10px;font-family:"stylefont1"; font-size:15px;}
+        </style>
+    </head>
+    <body id="top">
+        <a href="#top"><img src="image/top_button.GIF" class="topstatus" width=80px; height=80px alt="위로 이동"></a>
+        <a href="#find01"><img src="image/1.jpg" class="firststatus" width=80px; height=80px alt="1-1로 이동"></a>
+        <a href="#find02"><img src="image/2.jpg" class="secondstatus" width=80px; height=80px alt="1-2로 이동"></a>
+        <a href="#find03"><img src="image/3.jpg" class="thirdstatus" width=80px; height=80px alt="2-1로 이동"></a>
+
+        <header id="backgroundimg1">
+            <span class="font2">Background-color change:&nbsp;<button onclick="changeColor('top','rgb(186,245,186)');">origin</button>&nbsp;
+            <button onclick="changeColor('top','YellowGreen');">YellowGreen</button><br/><br/>
+            Inner Box color change:&nbsp;<button onclick="changeColor('innerBox','rgb(232, 247, 232)');">origin</button>&nbsp;
+            <button onclick="changeColor('innerBox','Azure');">Azure</button></span>
+            <a class="topfont" href="main.html">진영이의 <span class="stylefont">성장 </span>일기</a><img src="image/cocomong.JPG" id="main_img">
+        </header>
+
+            <nav>
+                <ul>
+                    <hr class="line"/>
+                    <li class="menustyle"><a class="topfont" href="menu1_page.html" title="Who am I?" >Who am I?</a></li>
+                    <li class="menustyle"><a class="topfont" href="menu2_page.html" title="My major">My major</a></li>
+                    <li class="menustyle"><a class="topfont" href="menu3_page.html" title="My study"><strong id="nowpage">My study</strong></a></li>
+                    <li class="menustyle"><a class="topfont" href="menu4_page.html" title="Contact">Contact</a></li>
+                </ul>
+            </nav>
+        <br/>
+        <br/>
+        <hr class="line"/>
+        <p><br/></p>
+        <div id="innerBox">
+            <p><br/></p>
+            <nav>
+                <ul class="menu">
+                <hr width="60%" class="line"/>
+                    <li class="menustyle"><a class="linkstyle" href="menu3_page.html" title="시간 흐름 기준으로 보는 나의 study"><strong id="nowpage1">시간별</strong></a></li>
+                    <li class="menustyle"><a class="linkstyle" href="menu3_sub1_page.html" title="주제를 기준으로 보는 나의 study">주제별</a></li>
+                    <li class="menustyle"><a class="linkstyle" onclick="check()" href="menu3_sub2_page.html" title="나의 study diary">my diary</a></li>
+                </ul>
+            </nav>
+            <p><br/></p>
+            <p><br/></p>
+            
+            <hr width="60%" class="line"/>
+            <p><br/></p>
+                <ul class="verticalLine">
+                    <li>
+                        <dl>
+                            <dt><canvas id="myCanvas" width="300" height="100" class="position"></canvas></dt>
+                            <dd id="find01"><br/>
+                                <p class="subtitle">수강한 전공과목</p>
+                                <p><br/></p>
+                                <p class="subcontent">IT공학: IT기술의 이해, 프로그래밍 입문(python), 기초프로그래밍 (C언어)</p>
+                                <p><br/></p>
+                                <p><br/></p>
+                                <p class="subtitle">나의 활동</p>
+                                <p><br/></p>
+                                <p class="subcontent"><strong>1. 나의 이름을 출력하는 프로그램</strong><br/><br/>
+                                    <img src="image/study1.jpg" width="300" height="300" />&nbsp;
+                                    <img src="image/study2.jpg" width="300" height="300" /><br/><br/>
+                                    저의 첫 프로그래밍, 처음으로 완성한 프로그램입니다. 지금 다시 보면 부족한 부분이 있는 프로그램이지만, <br/>
+                                    스스로, 처음 만들었다는 점에서 의의가 있는 작품입니다. 파이썬 언어를 사용하였습니다.
+                                </p>
+                                <br/>
+                                <p><br/></p>
+                                <p><br/></p>
+                                <br/>
+                                <p class="subcontent"><strong>2. 중국어 공부(hsk4급 고득점(260 이상) 달성 성공함!)</strong><br/><br/>
+                                    <video id="study1" controls src="video/chinesestudy1.mp4" width="300" height="300"></video><br/><br/>
+                                    <button id="playbtn">재생</button>재생시간/총시간:&nbsp;&nbsp;<span id="time"></span><br/><br/>
+                                    볼륨:&nbsp;<input id="volctrl" type="range" max="1" step="any"><br/><br/>
+
+                                    프로그래밍을 처음 배우고 받는 스트레스를 해소시켜준 중국어 공부! 그래서였는지는 모르겠지만,<br/> 
+                                    즐겁게 공부했고, 생각보다 빨리 중국어 실력이 늘어감을 체감했습니다~! <br/>
+                                    꾸준히 중국어 공부해서 중국어까지 섭렵하면,, 나 진짜 능력자되겠다~!
+                                </p>
+                            </dd>
+                        </dl>
+                    </li>
+
+                    <li>
+                        <dl>
+                            <dt><canvas id="myCanvas1" width="300" height="100" class="position"></canvas></dt>
+                            <dd id="find02"><br/>
+                                <p class="subtitle">수강한 전공과목</p>
+                                <p><br/></p>
+                                <p class="subcontent">IT공학: C++프로그래밍, IT수학<br/>
+                                통계학과: 기초통계학1 <br/>
+                                관심분야관련 교과 수강: 통계학입문, 경제학개론, 대용량데이터 관리와 튜닝</p>
+                                <p><br/></p>
+                                <p><br/></p>
+                                <p class="subtitle">나의 활동</p>
+                                <p><br/></p>
+                                <p class="subcontent"><strong>1. 지뢰게임과 벽돌깨기 게임 프로그램</strong><br/><br/>
+                                    <img src="image/study3.jpg" width="300" height="300" />&nbsp;
+                                    <img src="image/study4.jpg" width="300" height="300" /><br/><br/>
+                                    각 프로그램 모두 일주일가량을 공들여 완성한 프로그램입니다.<br/> 
+                                    제 친구들에게 자랑을 많이 했던,,,ㅎㅎ<br/>
+                                    프로그래밍에서의 성취감 및 재미를 저에게 알려주었다는 점에서 의의가 있는 작품입니다.<br/>
+                                    C++ 언어를 사용하였습니다.
+                                </p>
+                                <br/>
+                                <p><br/></p>
+                                <p><br/></p>
+                                <br/>
+                                <p class="subcontent"><strong>2. 관심분야 관련 공부</strong><br/><br/>
+                                    <img src="image/study5.jpg" width="300" height="300" />&nbsp;
+                                    <img src="image/study6.jpg" width="300" height="300" /><br/><br/>
+
+                                    여행을 좋아하는 저는, <br/>대한민국의 구석구석 지역의 특징, 음식에 대해 공부하고 싶어<br/>교양으로 '우리나라 음식여행' 과목을 수강하였습니다.<br/>
+                                    (생각보다 너~~무 암기라,, 생각보다도 더 힘든 과목이었던,,,,)<br/><br/>
+
+                                    또, 저는 데이터를 정제하고, 처리하고 등에 관심이 많아, <br/> '대용량데이터관리와 튜닝'이라는 과목을 수강했는데,<br/>
+                                    (수강선택에서 밀리지 않기 위해 일단 연계전공도 신청해놓음)<br/>
+                                    배운 내용을 좀더 연습해보고 싶어, <br/>겨울방학에 혼자 R프로그래밍까지 심화적으로 맛보기 공부를 했습니다.<br/> 
+                                    앞으로의 방학중에도 꾸준히 R프로그래밍을 배워볼 예정입니다.<br/><br/>
+                                    한편, 1학년 2학기는 처음으로 "스터디"에 참여하기 시작했다는 점에서도 의미가 있는 학기입니다.<br/>
+                                    경제학개론 수업 및 주변 지인들의 추천으로 주식에 관심이 생기던 찰나, 마음 맞는 친구들끼리 모여<br/>
+                                    1학년 2학기에 한학기동안 꾸준히 주식스터디에 참여했습니다.<br/>
+                                    그리고, 겨울방학에는 웹프로그래밍 스터디에 참여해 공부하였습니다. <br/><br/>
+                                    관련 링크는 아래에서 확인하실 수 있습니다. <br/>
+                                    주식 스터디 참여 (<a class="blue" target="_blank" href="https://drive.google.com/drive/folders/1CMmCCaNKE5Z0DL8NDhtEY3z4qE1RZah6?usp=sharing">관련 링크</a>)<br/>
+                                    웹프로그래밍 스터디 참여 (<a class="blue" target="_blank" href="https://github.com/Websookmyung">관련 링크</a>)
+                                </p>
+                            </dd>
+                        </dl>
+                    </li>
+
+                    <li>
+                        <dl>
+                            <dt><canvas id="myCanvas2" width="300" height="100" class="position"></canvas></dt>
+                            <dd id="find03"><br/>
+                                <p class="subtitle">수강한 전공과목</p>
+                                <p><br/></p>
+                                <p class="subcontent">IT공학: 객체지향프로그래밍(java), 데이터구조, 웹프로그래밍기초(html), IT기기구조<br/>
+                                통계학과: 수리통계학1, 통계수학1, 전산통계</p>
+                                <p><br/></p>
+                                <p><br/></p>
+                                <p class="subtitle">나의 활동</p>
+                                <p><br/></p>
+                                <p class="subcontent"><strong>1. 나만의 웹페이지, 나만의 눈사람</strong><br/><br/>
+                                    <img src="image/study7.jpg" width="300" height="300" />&nbsp;
+                                    <img src="image/study8.jpg" width="300" height="300" /><br/><br/>
+                                    현페이지이지만, 어쨋든 웹프로그래밍(html)을 이용해 나만의 웹페이지를 만들었고, <br/>
+                                    객체지향프로그래밍 수업의 내용에서 graphic에 매력에 빠져,,, 눈사람을 추가적으로 만들어보았습니다.<br/>
+                                    웹페이지는 html을, 눈사람은 java 언어를 이용했습니다.
+                                </p>
+                                <br/>
+                                <p><br/></p>
+                                <p><br/></p>
+                                <br/>
+                                <p class="subcontent"><strong>2. 전공 관련 활동</strong><br/><br/>
+                                    <img src="image/study9.jpg" width="300" height="300" /><br/><br/>
+
+                                    7전공,,이라는 무시무시한 학기(야망덩어리인 나)를 신청하면서 친구들이 미쳤다고 했으나,,<br/> 
+                                    보란듯 열심히 잘 해쳐나갔고, 마무리했습니다.~ 이번학기는 학과 공부 외에도 바쁘게 지냈는데,<br/>
+                                    전공과목(객체+데이터구조) 스터디에 참여해 백준문제와 데이터구조 개념정리를 했고, <br/>
+                                    1학년 1학기에 처음 배웠던 파이썬 언어에 대한 이해도가 부족했던 것 같아, 이부분 보완코자,<br/>
+                                    코딩 봉사 학회에 참여해 한학기동안 파이썬 기초 부분에 대한 코딩봉사+공부를 하였습니다.<br/><br/>
+                                    관련 링크는 아래에서 확인하실 수 있습니다.<br/>
+                                    자바와 데이터구조 스터디 참여 (<a class="blue" target="_blank" href="https://github.com/future-developerss">관련 링크</a>)<br/>
+                                    파이썬 기초 코딩봉사 (<a class="blue" target="_blank" href="https://github.com/firststudy-python">관련 링크</a>)
+                                </p>
+                                <br/>
+                                <p><br/></p>
+                                <p><br/></p>
+                                <br/>
+                                <p class="subcontent"><strong>3. 프로젝트</strong><br/><br/>
+                                    <img src="image/study10.jpg" width="300" height="300" />&nbsp;
+                                    <img src="image/study11.jpg" width="300" height="300" /><br/><br/>
+
+                                    객체지향프로그래밍 학과 수업의 기말과제로 팀프로젝트를 진행했습니다.<br/> 
+                                    '선택'에 어려움을 겪는 사람들을 위한 추천상품 솔루션 프로그램으로, 자바언어를 사용하였습니다.<br/><br/>
+                                    학과에서 진행하는 IPS 대회에 참여해 '여행 웹페이지' 만드는 팀프로젝트 또한 진행했습니다. <br/>
+                                    여행메이트 구하기, 여행정보 공유 라는 2가지 큰 테마를 가진 웹페이지로, <br/>
+                                    아직 완벽히 구현이 안된 기능에 대해서는 팀원들과 이번 방학에 공부하며 보완할 예정입니다.<br/><br/>
+                                    (<a class="blue" target="_blank" href="https://github.com/zhenying2">내 GITHUB 링크</a>)
+                                </p>
+                            </dd>
+                        </dl>
+                    </li>
+
+                    <li>
+                        <dl>
+                            <dt><canvas id="myCanvas3" width="300" height="100" class="position"></canvas></dt>
+                        </dl>
+                    </li>
+                </ul>
+
+        
+
+        </div>
+        
+        <script type="text/javascript">
+            var canvas=document.getElementById("myCanvas");
+            var myContext=canvas.getContext("2d");
+            var text1="1학년 1학기";
+            
+            myContext.font="bold 24pt Tahoma";
+            myContext.fillStyle="green";
+            myContext.fillText(text1,50,50);
+            myContext.beginPath();
+            myContext.moveTo(250,40);
+            myContext.lineTo(280,40);
+            myContext.lineWidth="5";
+            myContext.strokeStyle="green";
+            myContext.lineCap="round";
+            myContext.stroke();
+
+            var canvas=document.getElementById("myCanvas1");
+            var myContext=canvas.getContext("2d");
+            var text1="1학년 2학기";
+            
+            myContext.font="bold 24pt Tahoma";
+            myContext.fillStyle="green";
+            myContext.fillText(text1,50,50);
+            myContext.beginPath();
+            myContext.moveTo(250,40);
+            myContext.lineTo(280,40);
+            myContext.lineWidth="5";
+            myContext.strokeStyle="green";
+            myContext.lineCap="round";
+            myContext.stroke();
+
+            var canvas=document.getElementById("myCanvas2");
+            var myContext=canvas.getContext("2d");
+            var text1="2학년 1학기";
+            
+            myContext.font="bold 24pt Tahoma";
+            myContext.fillStyle="green";
+            myContext.fillText(text1,50,50);
+            myContext.beginPath();
+            myContext.moveTo(250,40);
+            myContext.lineTo(280,40);
+            myContext.lineWidth="5";
+            myContext.strokeStyle="green";
+            myContext.lineCap="round";
+            myContext.stroke();
+
+            var canvas=document.getElementById("myCanvas3");
+            var myContext=canvas.getContext("2d");
+            var text1="현재도 성장중";
+            
+            myContext.font="bold 24pt Tahoma";
+            myContext.fillStyle="green";
+            myContext.fillText(text1,20,50);
+            myContext.beginPath();
+            myContext.moveTo(250,40);
+            myContext.lineTo(280,40);
+            myContext.lineWidth="5";
+            myContext.strokeStyle="green";
+            myContext.lineCap="round";
+            myContext.stroke();
+
+            window.onload = function(){
+                var myVideo = document.getElementById("study1"),
+                playBtn = document.getElementById("playbtn"),
+                volumeCtrl = document.getElementById("volctrl"),
+                timeDiv = document.getElementById("time");
+
+                myVideo.addEventListener("timeupdate", updateTime);
+                playBtn.addEventListener("click", play);
+                volumeCtrl.addEventListener("change", updateVolume);
+     
+                function updateTime(){
+                    timeDiv.innerHTML = Math.floor(myVideo.currentTime) + "/" + Math.floor(myVideo.duration) + "(초)";
+                }
+                function play(){
+                    if(myVideo.paused){
+                        playBtn.innerHTML = "일시정지";
+                        myVideo.play();
+                    }else{
+                        playBtn.innerHTML = "재생";
+                        myVideo.pause();
+                    }
+                }
+                function updateVolume() {
+                    myVideo.volume = volumeCtrl.value;
+                }
+            }
+
+            function check(){
+                var asking="My diary 게시판은 '진영이의 일기장'으로 운영되는 게시판입니다.\n 비밀 유지를 약속하며, 게시판으로 입장하는 것에 동의하십니까?";
+                var type;
+                type=confirm(asking);
+
+                if(type == true){
+                    window.open("menu3_sub2_page.html"); 
+                }
+                else{
+                    window.open("menu3_page.html"); 
+                }
+            }
+
+            function changeColor(id,color){
+                document.getElementById(id).style.background=color;
+            }  
+        </script>
+        <p><br/></p>
+        <p><br/></p>
+        <p><br/></p>
+        <p><br/></p>
+        <footer class="topfont">&#169;copyright는 작성자 김진영에게 있습니다.<br/>배경 음악 및 음악에 대한 저작권은 모두 가수 및 관련업계에 있습니다.</footer>
+    </body>
+</html>

@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>진영이의 성장 일기</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+        <meta charset="UTF-8" />
+        <style type="text/css">
+            .line{border-color:green;border-style:solid;border-width:thin;background-color: green;}
+            .status{text-align:center;}
+            .imgstatus{vertical-align:middle;}
+            .topstatus{z-index:2;position:fixed; right:0px; top:35px;}
+            .firststatus{z-index:3;position:fixed; right:0px; top:115px;}
+            .secondstatus{z-index:4;position:fixed; right:0px; top:195px;}
+            .thirdstatus{z-index:5;position:fixed; right:0px; top:275px;}
+            .fourthstatus{z-index:6;position:fixed; right:0px; top:355px;}
+            .fifthstatus{z-index:7;position:fixed; right:0px; top:435px;}
+            .blue{color:blue;}
+            ol h2 a{color:blue;}
+            ol h2 a:hover{text-decoration:underline; color:green;}
+            .white{color:white;}
+            @font-face{font-family:"font"; src:url("font/BMEULJIROTTF.ttf")}
+            @font-face{font-family:"Titlestyle-font"; src:url("font/BMEuljiro10yearslater.ttf")}
+            @font-face{font-family:"stylefont1"; src:url("font/BMDOHYEON_ttf.ttf")}
+            @font-face{font-family:"textfont"; src:url("font/BMHANNAAir_ttf.ttf")}
+            .topfont{font-family:"font";}
+            .font{font-family:"font";font-size:30px;}
+            .stylefont{color:green; font-family:"Titlestyle-font";font-size: 50pt;}
+            .toptextfont{font-family:"stylefont1";}
+            .textfont{font-family:"textfont";}
+            .iframe{float:left; position:absolute; right:13%; margin:0px;}
+            #dog:hover{width:1082px;height:742px;}
+            #backgroundimg1{background-image:url(image/background1.JPG); background-repeat:repeat-x;background-position: bottom;}
+            #nowpage{background-color:white;}
+            #main_img{width:"10";height:"10";position:relative;top:50px;}
+            a{text-decoration:none;color:black;}    /*링크 아래 연결 선 없애기 위함*/
+            body,html{margin:0;padding:0;height:100%;} /*화면에 배경 꽉채우기 위함*/
+            body{background-color:rgb(186,245,186);overflow-x: hidden;}
+            header{background-color:white;font-weight:bold;font-size: 40pt;text-align:center;padding:100px;}
+            nav a:hover{text-decoration:underline; color:blue;}
+            div{margin:0 auto;width:85%; border-color:green; border-style:solid;border-radius: 30pt;
+                background-color: rgb(232, 247, 232);}
+            ol li{list-style-position:inside;padding-left:70px;font-size:20pt;}
+            ol li a:hover{text-decoration:underline; color:green;}
+            p{font-size:14pt;padding-left:140px;padding:10px;margin-right:40px; font-family:"textfont";}
+            figure figcaption{font-size: 10pt; position:relative; top:-60px;}
+            footer{clear:both;text-align:right; margin:5px;}
+            .font2{position:absolute; left:2%;top:10px;font-family:"stylefont1"; font-size:15px;}
+            .menustyle {width:15%;height:100%;border : 0;margin: 1 1 1 1; padding: 0 0 0 0;float: left;position:relative;left:19%;}
+            ul {list-style:none; margin:0; padding:0;height:100%;position:relative;top:-10;font-size:15pt;text-align:center;}
+        </style>
+    </head>
+    <body id="top">
+        <a href="#top"><img src="image/top_button.GIF" class="topstatus" width=80px; height=80px alt="위로 이동"></a>
+        <a href="#first"><img src="image/first_button.png" class="firststatus" width=80px; height=80px alt="학력/이력으로 이동"></a>
+        <a href="#second"><img src="image/second_button.png" class="secondstatus" width=80px; height=80px alt="MBTI로 이동"></a> 
+        <a href="#third"><img src="image/third_button.png" class="thirdstatus" width=80px; height=80px alt="취미로 이동"></a> 
+        <a href="#fourth"><img src="image/fourth_button.png" class="fourthstatus" width=80px; height=80px alt="Like로 이동"></a> 
+        <a href="#fifth"><img src="image/fifth_button.png" class="fifthstatus" width=80px; height=80px alt="보유중인 자격증으로 이동"></a>
+
+        <header id="backgroundimg1">
+            <span class="font2">Background-color change:&nbsp;<button onclick="changeColor('top','rgb(186,245,186)');">origin</button>&nbsp;
+            <button onclick="changeColor('top','YellowGreen');">YellowGreen</button><br/><br/>
+            Inner Box color change:&nbsp;<button onclick="changeColor('innerBox','rgb(232, 247, 232)');">origin</button>&nbsp;
+            <button onclick="changeColor('innerBox','Azure');">Azure</button></span>
+            
+            <a class="topfont" href="main.html">진영이의 <span class="stylefont">성장 </span>일기</a><img src="image/cocomong.JPG" id="main_img">
+        </header>
+            <nav>
+                <ul>
+                    <hr class="line"/>
+                    <li class="menustyle"><a class="topfont" href="menu1_page.html" title="Who am I?" ><strong id="nowpage">Who am I?</strong></a></li>
+                    <li class="menustyle"><a class="topfont" href="menu2_page.html" title="My major">My major</a></li>
+                    <li class="menustyle"><a class="topfont" href="menu3_page.html" title="My study">My study</a></li>
+                    <li class="menustyle"><a class="topfont" href="menu4_page.html" title="Contact">Contact</a></li>
+                </ul>
+            </nav>
+        <br/>
+        <br/>
+        <hr class="line"/>
+        <p><br/></p>
+        <div id="innerBox">
+            <ol id="first" class="font">
+                <p><br/></p>
+                <iframe class="iframe" src="" name="intro" width="800" height="200"></iframe>
+                <h2><img src="image/num1.JPG" width="80" class="imgstatus" cellspacing=5px>
+                    <a class="font" name="iframe" href="http://www.sookmyung.ac.kr/sookmyungkr/index.do" target="intro">
+                        학력/이력</a></h2></h2>
+                
+                <li><strong class="toptextfont">대학</strong></a>&nbsp;
+                    <p>2020.03 ~ 숙명여자대학교 IT공학 재학</p>
+                </li>
+            </ol>
+            <hr class="line"/>
+            <ol id="second" class="font">
+                <h2><img src="image/num2.JPG" width="80" class="imgstatus" cellspacing=5px>
+                    <a class="font" name="iframe" href="https://ko.wikipedia.org/wiki/%EB%A7%88%EC%9D%B4%EC%96%B4%EC%8A%A4-%EB%B8%8C%EB%A6%AD%EC%8A%A4_%EC%9C%A0%ED%98%95_%EC%A7%80%ED%91%9C" target="intro">
+                    MBTI</a></h2>
+                <li>
+                    <strong class="toptextfont">ENTJ</strong></a>&nbsp;
+                    <p>
+                        ENTJ는 외향,직관,사고,판단형의 유형으로 매사에 열성적이고 대담하며 자신감이 넘치는 타고난 리더형의 통솔자, 지도자 타입이다. 솔직하고 단호한 성격을 갖고 있으며,
+                        어려운 문제에 부딪히면 논리적이고 체계적, 객관적으로 분석해서 현명하게 상황을 잘 해결하는 혁신적이고도 창의적인 성격이 돋보이는 유형이다.
+                        활발하고 외향적인 성격으로 활력과 에너지가 넘치고 특유의 사교적인 성격으로 다른 사람들과 시간을 보내면서 상호작용하는 것을 선호한다.
+                        전략가이자 뛰어난 지도자 스타일로, 대범하며 변화를 두려워하지 않고 미래 지향적인 특징을 가지고 있으며, 숲을 볼 줄 아는 넓은 시야를 가진 유형이다.
+                    </p>
+                </li>
+            </ol>
+            <hr class="line"/>
+            <ol id="third" class="font">
+                <h2><img src="image/num3.JPG" width="80" class="imgstatus" cellspacing=5px><span class="font">&nbsp;취미</span></h2>
+                <li><strong class="toptextfont">어학 공부</strong>&nbsp;
+                    <p>
+                        자신의 생각과 기분을 다양한 사람들과 만나 소통하고 나누고 싶은 마음이 어렸을 때부터 있어서인지, 어려서부터 다양한 외국어 공부를 하는 것을 좋아하고 열심히 했다.
+                        최근에는, 전공 공부 및 코딩 연습에 시간을 더 투자하느라, 이전보다 외국어 공부하는 시간은 줄어들었지만, 꾸준히 영어공부와 전화영어, 교내 잉글리시 클럽에 참여하고 있다.
+                        방학때나 시간적으로 여유로운 학기에는 중국어를 배우는데, 2020년 처음 중국어를 배운 이후 현재 HSK 5급을 준비하고 있다.
+                    </p>
+                </li>
+                <li><strong class="toptextfont">음악/영화 감상</strong>&nbsp;
+                    <p>
+                        어학공부하는 것을 좋아하는 나에게 있어서, 영화 및 음악 감상은 그동안 배운 언어실력을 늘리는데 도움을 줄 뿐만 아니라,
+                        공부하면서 지치고 포기하고 싶어지는 마음을 다잡게 해주는 긍정적인 원동력이다. 장르불문하고 다양한 종류를 감상하지만, 음악의 경우 국내노래보다는 팝송을 더 즐겨 듣는다.
+                    </p>
+                </li>
+            </ol>
+            <hr class="line"/>
+            <ol id="fourth" class="font" class="font">
+                <h2><img src="image/num4.JPG" width="80" class="imgstatus" cellspacing=5px><span class="font">&nbsp;Like</span></h2>
+                <li><strong class="toptextfont">보라색</strong>&nbsp;
+                    <p>
+                        거의 대부분의 색깔을 좋아하지만, 그중에서도 보라색을 가장 좋아한다. 특별한 의미가 있어 좋아하는 것은 아니지만, 
+                        차가운 계열을 대표하는 파랑색과 따뜻한 계열을 대표하는 빨강색이 섞여 만들어진다는 것을 알게 된 후부터 매력적이라는 생각이 들었다.
+                        차가움과 따뜻함의 조화로 만들어진 유채색인 보라색처럼, 냉정한 이성과 따뜻한 감성이 조화롭게 융합된 인재/사람이 되고 싶다는 의지와 다짐으로 가장 좋아하는 색으로 뽑았다.
+                    </p>
+                </li>
+                <li><strong class="toptextfont">강아지</strong>&nbsp;
+                    <p><iframe width="560" height="315" src="video/mydog.mp4" controls preload="metadata" frameborder="0" allowfullscreen></iframe>
+                    <iframe id="dog" class="iframe" src="image/mydog.jpg" title="내이름은 뚱~" name="intro1" width="800" height="320" scrolling="no"></iframe></p>
+                    <p>나는 식물보다는 동물을 더 좋아한다. 동물들 중에서도 강아지를 좋아한다. 현재 나는 강아지를 1마리 키우고 있는데, 이름은 '뚱'이다. 
+                       강아지를 키우기 이전보다 신경써야 할 부분이나 귀찮은 일이 많아졌지만, 그 이상으로 뚱이는 기쁨과 위로를 해준다.
+                       앞으로도 건강하게! 행복하게! 잘 지내자 뚱아~
+                    </p>
+                </li>
+                <li><strong class="toptextfont">여행</strong>&nbsp;
+                    <p>
+                        일상에 지치고 피곤하다 느낄 때, 여행을 다녀 온다. '빨리'에 익숙하고 당연하다 생각해 왔던 일상에서 잠시 벗어나 멈춰 자연 및 주변에 소리에 귀를 기울일 수 있기 때문이다.
+                        아직 많은 여행지, 많은 국가를 여행해본 것은 아니지만, 시간과 경제적인 여유가 된다면 그 때마다 여행을 다녀올 계획 및 의지가 있다.
+                    </p>
+                </li>
+                <li><strong class="toptextfont">최애 가수   
+                    <a class="blue" target="_blank" href="https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=1&ie=utf8&query=imagine+dragons" title="info_artist">imagine dragons</a></strong>&nbsp;
+                    <p><audio name="음악" controls src="audio/believer.mp3" loop>브라우저에서 &lt;audio&gt;를 지원하지 않습니다.</audio></p>
+                    <p>한번쯤 들어본 적 있을 만큼 꽤 유명한 노래, imagine dragons의 believer이다. imagine dragons 특유의 독특한 감성과 가사는 매번 나에게 큰 영감과 매력을 느끼게 만든다.
+                       일렉트로니카 장르와 록 장르를 결합시켜 현재 큰 성공을 한 밴드이며, 시적인 가사와 인디밴드스러운 록 사운드, 일렉 사운드의 접목 그리고 보컬 댄 레이놀즈의 목소리가 인상적이다.
+                    </p>
+                </li>
+                <li><strong class="toptextfont">최애 영화   
+                    <a class="blue" target="_blank" href="https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=0&ie=utf8&query=lion+king">Lion king</a></strong>&nbsp;
+                    <iframe class="iframe" src="https://www.youtube.com/embed/EgqQSuwYpA0" name="intro2" width="800" height="550"></iframe>
+                    <figure>
+                        <img src="image/lionking.jpg" width="500" class="imgstatus" cellspacing=5px>
+                        <figcaption class="textfont">내가 그린 라이온킹 그림</figcaption>
+                    </figure>
+                    <p>
+                        어릴 때 어렴풋한 줄거리가 기억날 뿐 정확하게 기억이 잘 안나서 일부로 찾아서 봤다가 인생영화가 되었다. 줄거리를 요약하면, 어린 사자 심바의 성장스토리인데,
+                        일상 생활에서 겪게 되는 역경, 슬픔이 있을 때, 심바가 이겨내왔던 과정과 방법을 생각하면서 많은 도움과 힘을 얻었고, 얻고 있다.
+                    </p>
+                </li>
+            </ol>
+            <hr class="line"/>
+            <ol id="fifth" class="font">
+                <h2><img src="image/num5.JPG" width="80" class="imgstatus" cellspacing=5px><span class="font">&nbsp;보유중인 자격증</span></h2>
+                <li><strong class="toptextfont">토익</strong>&nbsp;
+                <li><strong class="toptextfont">HSK 4급</strong>&nbsp;
+            </ol>
+        </div>
+        <p><br/></p>
+        <p><br/></p>
+        <p><br/></p>
+        <p><br/></p>
+        <footer class="topfont">&#169;copyright는 작성자 김진영에게 있습니다.<br/>배경 음악 및 음악에 대한 저작권은 모두 가수 및 관련업계에 있습니다.</footer>
+
+        <script type="text/javascript">
+            function changeColor(id,color){
+                document.getElementById(id).style.background=color;
+            }
+        </script>
+    </body>
+</html>
