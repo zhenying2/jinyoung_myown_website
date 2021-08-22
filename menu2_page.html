@@ -6,7 +6,6 @@
         <meta charset="UTF-8" />
         <style type="text/css">
             .line{border-color:green;border-style:solid;border-width:thin; background-color: green;}
-            .status{text-align:center;}
             .topstatus{z-index:2;position:fixed; right:0px; top:35px;}
             .firststatus{z-index:3;position:fixed; right:0px; top:115px;}
             .secondstatus{z-index:4;position:fixed; right:0px; top:195px;}
@@ -31,13 +30,13 @@
             body{background-color:rgb(186,245,186);overflow-x: hidden;}
             header{background-color:white;font-weight:bold;font-size: 40pt;text-align:center; padding:100px;}
             nav a:hover{text-decoration:underline; color:blue;}
-            div{margin:0 auto;width:85%; border-color:green; border-style:solid;border-radius: 30pt;
-                background-color: rgb(232, 247, 232);}
+            .divstyle{margin:0 auto;width:85%; border-color:green; border-style:solid;border-radius: 30pt;
+                background-color: rgb(232, 247, 232);text-align:center;}
             li{list-style:none;list-style-position:inside;padding-left:70px;font-size:15pt;}
             ul h2 a:hover{text-decoration:underline; color:green;}
             footer{clear:both;text-align:right; margin:5px;}
             .font2{position:absolute; left:2%;top:10px;font-family:"stylefont1"; font-size:15px;}
-            .menustyle {width:15%;height:100%;border : 0;margin: 1 1 1 1; padding: 0 0 0 0;float: left;position:relative;left:19%;}
+            .menustyle {width:15%;height:100%;border : 0;margin: 1 1 1 1; padding: 0 0 0 0;float: left;position:relative;left:27%;}
             ul {list-style:none; margin:0; padding:0;height:100%;position:relative;top:-10;font-size:15pt;text-align:center;}
         </style>
     </head>
@@ -46,18 +45,9 @@
         <a href="#first"><img src="image/major_button.png" class="firststatus" width=80px; height=80px alt="IT공학과(본전공)으로 이동"></a>
         <a href="#second"><img src="image/doublemajor_button.png" class="secondstatus" width=80px; height=80px alt="통계학과(복수전공)으로 이동"></a> 
         <header id="backgroundimg1">
-            <span class="font2">Background-color change:&nbsp;<button onclick="changeColor('top','rgb(186,245,186)');">origin</button>&nbsp;
-            <button onclick="changeColor('top','YellowGreen');">YellowGreen</button><br/><br/>
-            Inner Box color change:&nbsp;<button onclick="changeColor('innerBox','rgb(232, 247, 232)');">origin</button>&nbsp;
-            <button onclick="changeColor('innerBox','Azure');">Azure</button></span>
             <a class="topfont" href="main.html">진영이의 <span class="stylefont">성장 </span>일기</a><img src="image/cocomong.JPG" id="main_img">
         </header>
 
-         <script type="text/javascript">
-            function changeColor(id,color){
-                document.getElementById(id).style.background=color;
-            }
-        </script>
 
             <nav>
                 <ul>
@@ -65,7 +55,6 @@
                     <li class="menustyle"><a class="topfont" href="menu1_page.html" title="Who am I?" >Who am I?</a></li>
                     <li class="menustyle"><a class="topfont" href="menu2_page.html" title="My major"><strong id="nowpage">My major</strong></a></li>
                     <li class="menustyle"><a class="topfont" href="menu3_page.html" title="My study">My study</a></li>
-                    <li class="menustyle"><a class="topfont" href="menu4_page.html" title="Contact">Contact</a></li>
                 </ul>
             </nav>
         <br/>
@@ -73,7 +62,7 @@
         <hr class="line"/>
 
         <p><br/></p>
-        <div id="innerBox" class="status">
+        <div id="innerBox" class="divstyle">
             <ul class="textfont">
                 <br/><br/>
                 <h2 id="first" class="toptextfont"><span class="highlight">IT공학(주 전공) </span>내역 <a class="blue" target="_blank" href="http://it.sookmyung.ac.kr/it/index.do">(IT공학 홈페이지)</a></h2>
@@ -425,7 +414,7 @@
                                 </td>
                             </tr>
                             <tr>
-                                <td>수리 통계학Ⅰ</td>
+                                <td>수리 통계학1</td>
                                 <td class="except">이론통계학의 입문과목으로서 다양한 현상을 통계적으로 분석하기 위한 도구인 확률의 정의와 성질, 확률변수와 확률분포의 성질에 대해 배운다.</td>
                             </tr>
                             <tr>
@@ -441,7 +430,7 @@
                             </tr>
                             <tr>
                                 <td rowspan="4">2학기</td>
-                                <td>수리 통계학Ⅱ</td>
+                                <td>수리 통계학2</td>
                                 <td class="except">
                                     이론통계학의 입문과목으로서 수리통계학I에 이어서 통계학의 기초가 되는 표본분포, 모수의 추정, 통계적 가설검정 등에 대한 이론을 수리적으로 심도있게 다룬다.
                                 </td>

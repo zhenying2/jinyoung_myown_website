@@ -37,7 +37,7 @@
             body{background-color:rgb(186,245,186);overflow-x: hidden;}
             header{background-color:white;font-weight:bold;font-size: 40pt;text-align:center;padding:100px;}
             nav a:hover{text-decoration:underline; color:blue;}
-            div{margin:0 auto;width:85%; border-color:green; border-style:solid;border-radius: 30pt;
+            .divstyle{margin:0 auto;width:85%; border-color:green; border-style:solid;border-radius: 30pt;
                 background-color: rgb(232, 247, 232);}
             ol li{list-style-position:inside;padding-left:70px;font-size:20pt;}
             ol li a:hover{text-decoration:underline; color:green;}
@@ -45,7 +45,7 @@
             figure figcaption{font-size: 10pt; position:relative; top:-60px;}
             footer{clear:both;text-align:right; margin:5px;}
             .font2{position:absolute; left:2%;top:10px;font-family:"stylefont1"; font-size:15px;}
-            .menustyle {width:15%;height:100%;border : 0;margin: 1 1 1 1; padding: 0 0 0 0;float: left;position:relative;left:19%;}
+            .menustyle {width:15%;height:100%;border : 0;margin: 1 1 1 1; padding: 0 0 0 0;float: left;position:relative;left:27%;}
             ul {list-style:none; margin:0; padding:0;height:100%;position:relative;top:-10;font-size:15pt;text-align:center;}
         </style>
     </head>
@@ -58,10 +58,6 @@
         <a href="#fifth"><img src="image/fifth_button.png" class="fifthstatus" width=80px; height=80px alt="보유중인 자격증으로 이동"></a>
 
         <header id="backgroundimg1">
-            <span class="font2">Background-color change:&nbsp;<button onclick="changeColor('top','rgb(186,245,186)');">origin</button>&nbsp;
-            <button onclick="changeColor('top','YellowGreen');">YellowGreen</button><br/><br/>
-            Inner Box color change:&nbsp;<button onclick="changeColor('innerBox','rgb(232, 247, 232)');">origin</button>&nbsp;
-            <button onclick="changeColor('innerBox','Azure');">Azure</button></span>
             
             <a class="topfont" href="main.html">진영이의 <span class="stylefont">성장 </span>일기</a><img src="image/cocomong.JPG" id="main_img">
         </header>
@@ -71,14 +67,13 @@
                     <li class="menustyle"><a class="topfont" href="menu1_page.html" title="Who am I?" ><strong id="nowpage">Who am I?</strong></a></li>
                     <li class="menustyle"><a class="topfont" href="menu2_page.html" title="My major">My major</a></li>
                     <li class="menustyle"><a class="topfont" href="menu3_page.html" title="My study">My study</a></li>
-                    <li class="menustyle"><a class="topfont" href="menu4_page.html" title="Contact">Contact</a></li>
                 </ul>
             </nav>
         <br/>
         <br/>
         <hr class="line"/>
         <p><br/></p>
-        <div id="innerBox">
+        <div id="innerBox" class="divstyle">
             <ol id="first" class="font">
                 <p><br/></p>
                 <iframe class="iframe" src="" name="intro" width="800" height="200"></iframe>
@@ -178,11 +173,5 @@
         <p><br/></p>
         <p><br/></p>
         <footer class="topfont">&#169;copyright는 작성자 김진영에게 있습니다.<br/>배경 음악 및 음악에 대한 저작권은 모두 가수 및 관련업계에 있습니다.</footer>
-
-        <script type="text/javascript">
-            function changeColor(id,color){
-                document.getElementById(id).style.background=color;
-            }
-        </script>
     </body>
 </html>

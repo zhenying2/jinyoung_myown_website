@@ -22,7 +22,7 @@
             body{background-color:rgb(186,245,186);overflow-x: hidden;}
             header{background-color:white;font-weight:bold;font-size: 40pt;text-align:center; padding:100px;}
             nav a:hover{text-decoration:underline; color:blue;}
-            div{margin:0 auto;width:88%; height:5500px;border-color:green; border-style:solid;border-radius: 30pt;
+            .divstyle{margin:0 auto;width:88%; height:5800px;border-color:green; border-style:solid;border-radius: 30pt;
                 background-color: rgb(232, 247, 232);}
             footer{clear:both;text-align:right; margin:5px;}
 
@@ -31,29 +31,27 @@
             .secondstatus{z-index:4;position:fixed; right:0px; top:195px;}
             .thirdstatus{z-index:5;position:fixed; right:0px; top:275px;}
 
-            .menustyle {width:15%;height:100%;border : 0;margin: 1 1 1 1; padding: 0 0 0 0;float: left;position:relative;left:19%;}
+            .menustyle {width:15%;height:100%;border : 0;margin: 1 1 1 1; padding: 0 0 0 0;float: left;position:relative;left:27%;}
+            .menustyle1 {width:15%;height:100%;border : 0;margin: 1 1 1 1; padding: 0 0 0 0;float: left;position:relative;left:19%;}
             ul {list-style:none; margin:0; padding:0;height:100%;position:relative;top:-10;font-size:15pt;text-align:center;}
             .menu{position:relative;top:50px;}
             .linkstyle{position:relative;left:50%;font-size: 20pt;font-weight:bold;text-decoration:none;color:black; font-family:"textfont";}
             .position{position:relative;right:510px;top:80px;}
             .subtitle{font-family:"font";font-size:23px;font-weight:bold;float:left;}
-            .verticalLine {position:relative;left:50%; border-left: thick solid green;float:left;height:5200px;}
+            .verticalLine {position:relative;left:50%; border-left: thick solid green;float:left;height:5580px;}
             .subcontent{font-family:"textfont";float:left;}
             .blue{color:blue;}
             .font2{position:absolute; left:2%;top:10px;font-family:"stylefont1"; font-size:15px;}
+            p a:hover{text-decoration:underline; color:green;}
         </style>
     </head>
     <body id="top">
         <a href="#top"><img src="image/top_button.GIF" class="topstatus" width=80px; height=80px alt="위로 이동"></a>
-        <a href="#find01"><img src="image/1.jpg" class="firststatus" width=80px; height=80px alt="1-1로 이동"></a>
-        <a href="#find02"><img src="image/2.jpg" class="secondstatus" width=80px; height=80px alt="1-2로 이동"></a>
-        <a href="#find03"><img src="image/3.jpg" class="thirdstatus" width=80px; height=80px alt="2-1로 이동"></a>
+        <a href="#find01"><img src="image/one.png" class="firststatus" width=80px; height=80px alt="1-1로 이동"></a>
+        <a href="#find02"><img src="image/two.png" class="secondstatus" width=80px; height=80px alt="1-2로 이동"></a>
+        <a href="#find03"><img src="image/three.png" class="thirdstatus" width=80px; height=80px alt="2-1로 이동"></a>
 
         <header id="backgroundimg1">
-            <span class="font2">Background-color change:&nbsp;<button onclick="changeColor('top','rgb(186,245,186)');">origin</button>&nbsp;
-            <button onclick="changeColor('top','YellowGreen');">YellowGreen</button><br/><br/>
-            Inner Box color change:&nbsp;<button onclick="changeColor('innerBox','rgb(232, 247, 232)');">origin</button>&nbsp;
-            <button onclick="changeColor('innerBox','Azure');">Azure</button></span>
             <a class="topfont" href="main.html">진영이의 <span class="stylefont">성장 </span>일기</a><img src="image/cocomong.JPG" id="main_img">
         </header>
 
@@ -63,21 +61,20 @@
                     <li class="menustyle"><a class="topfont" href="menu1_page.html" title="Who am I?" >Who am I?</a></li>
                     <li class="menustyle"><a class="topfont" href="menu2_page.html" title="My major">My major</a></li>
                     <li class="menustyle"><a class="topfont" href="menu3_page.html" title="My study"><strong id="nowpage">My study</strong></a></li>
-                    <li class="menustyle"><a class="topfont" href="menu4_page.html" title="Contact">Contact</a></li>
                 </ul>
             </nav>
         <br/>
         <br/>
         <hr class="line"/>
         <p><br/></p>
-        <div id="innerBox">
+        <div id="innerBox" class="divstyle">
             <p><br/></p>
             <nav>
                 <ul class="menu">
                 <hr width="60%" class="line"/>
-                    <li class="menustyle"><a class="linkstyle" href="menu3_page.html" title="시간 흐름 기준으로 보는 나의 study"><strong id="nowpage1">시간별</strong></a></li>
-                    <li class="menustyle"><a class="linkstyle" href="menu3_sub1_page.html" title="주제를 기준으로 보는 나의 study">주제별</a></li>
-                    <li class="menustyle"><a class="linkstyle" onclick="check()" href="menu3_sub2_page.html" title="나의 study diary">my diary</a></li>
+                    <li class="menustyle1"><a class="linkstyle" href="menu3_page.html" title="시간 흐름 기준으로 보는 나의 study"><strong id="nowpage1">시간별</strong></a></li>
+                    <li class="menustyle1"><a class="linkstyle" href="menu3_sub1_page.html" title="주제를 기준으로 보는 나의 study">주제별</a></li>
+                    <li class="menustyle1"><a class="linkstyle" onclick="check()" href="#" title="나의 study diary">my diary</a></li>
                 </ul>
             </nav>
             <p><br/></p>
@@ -85,6 +82,7 @@
             
             <hr width="60%" class="line"/>
             <p><br/></p>
+            
                 <ul class="verticalLine">
                     <li>
                         <dl>
@@ -174,8 +172,8 @@
                             <dd id="find03"><br/>
                                 <p class="subtitle">수강한 전공과목</p>
                                 <p><br/></p>
-                                <p class="subcontent">IT공학: 객체지향프로그래밍(java), 데이터구조, 웹프로그래밍기초(html), IT기기구조<br/>
-                                통계학과: 수리통계학1, 통계수학1, 전산통계</p>
+                                <p class="subcontent">IT공학: 객체지향 프로그래밍 (java), 데이터 구조, 웹프로그래밍 기초 (html), IT 기기구조<br/>
+                                통계학과: 수리통계학1, 통계수학1, 전산통계, 기초통계학2</p>
                                 <p><br/></p>
                                 <p><br/></p>
                                 <p class="subtitle">나의 활동</p>
@@ -199,9 +197,13 @@
                                     전공과목(객체+데이터구조) 스터디에 참여해 백준문제와 데이터구조 개념정리를 했고, <br/>
                                     1학년 1학기에 처음 배웠던 파이썬 언어에 대한 이해도가 부족했던 것 같아, 이부분 보완코자,<br/>
                                     코딩 봉사 학회에 참여해 한학기동안 파이썬 기초 부분에 대한 코딩봉사+공부를 하였습니다.<br/><br/>
+                                    방학동안에는, 이번학기에 배운 데이터구조에 대해 스스로 복습하였고, <br/>
+                                    알고리즘 스터디에 참여하여 알고리즘 및 데이터구조 관련 백준 문제를 풀었습니다. <br/>
+                                    스터디가 끝난 이후에도 꾸준히 알고리즘 문제 풀이를 혼자서라도 할 예정입니다!<br/><br/>
                                     관련 링크는 아래에서 확인하실 수 있습니다.<br/>
                                     자바와 데이터구조 스터디 참여 (<a class="blue" target="_blank" href="https://github.com/future-developerss">관련 링크</a>)<br/>
                                     파이썬 기초 코딩봉사 (<a class="blue" target="_blank" href="https://github.com/firststudy-python">관련 링크</a>)
+                                    알고리즘 (<a class="blue" target="_blank" href="https://github.com/zhenying2/algorithm-solving">관련 링크</a>)
                                 </p>
                                 <br/>
                                 <p><br/></p>
@@ -209,14 +211,26 @@
                                 <br/>
                                 <p class="subcontent"><strong>3. 프로젝트</strong><br/><br/>
                                     <img src="image/study10.jpg" width="300" height="300" />&nbsp;
-                                    <img src="image/study11.jpg" width="300" height="300" /><br/><br/>
+                                    <img src="image/studying.JPG" width="400" height="300" /><br/><br/>
 
                                     객체지향프로그래밍 학과 수업의 기말과제로 팀프로젝트를 진행했습니다.<br/> 
                                     '선택'에 어려움을 겪는 사람들을 위한 추천상품 솔루션 프로그램으로, 자바언어를 사용하였습니다.<br/><br/>
                                     학과에서 진행하는 IPS 대회에 참여해 '여행 웹페이지' 만드는 팀프로젝트 또한 진행했습니다. <br/>
                                     여행메이트 구하기, 여행정보 공유 라는 2가지 큰 테마를 가진 웹페이지로, <br/>
                                     아직 완벽히 구현이 안된 기능에 대해서는 팀원들과 이번 방학에 공부하며 보완할 예정입니다.<br/><br/>
-                                    (<a class="blue" target="_blank" href="https://github.com/zhenying2">내 GITHUB 링크</a>)
+                                    생각치 못하게 방학에 교내 공과대학 연합 meit 대회에 참여했습니다. <br/>
+                                    기계, 전자, it 3개의 학부의 전공을 적절히 연합하여 하나의 프로젝트를 완성했는데, <br/>
+                                    공항 컨베이너벨트에 자신의 짐의 출하/수거 유무와 위치를 알려주는 주제의 프로그램을 완성했습니다. <br/>
+                                    이번 프로젝트에서는 비록,, 다사다난한 일이 많았지만, 3등 (은상)을 수상했고, <br/>
+                                    아두이노에 대한 흥미 및 데이터베이스에 대해 공부할 수 있는 기회가 되었다고 생각합니다. <br/>
+                                    (총장상이 매우 탐나지만...ㅋㅋ 여기까지 온 것으로도 만족하는 걸!로!) <br/><br/>
+                                    관련 링크는 아래에서 확인하실 수 있습니다. <br/>
+                                    객체지향 기말 프로젝트(<a class="blue" target="_blank" href=https://github.com/future-developerss/FinalResult>관련 링크</a>)<br/>
+                                    IPS 프로젝트 (<a class="blue" target="_blank" href=https://github.com/zhenying2/IPS_tripstargram>관련 링크</a>)<br/>
+                                    meit 프로젝트_독학공부 (<a class="blue" target="_blank" href=https://github.com/zhenying2/Android>관련 링크</a>)<br/>
+                                    meit 프로젝트_with sw (<a class="blue" target="_blank" href=https://github.com/zhenying2/meit_sw-code>관련 링크</a>)<br/>
+                                    <br/><br/>
+                                    PLUS: (<a class="blue" target="_blank" href="https://github.com/zhenying2">내 GITHUB 링크</a>)
                                 </p>
                             </dd>
                         </dl>
@@ -322,21 +336,19 @@
             }
 
             function check(){
-                var asking="My diary 게시판은 '진영이의 일기장'으로 운영되는 게시판입니다.\n 비밀 유지를 약속하며, 게시판으로 입장하는 것에 동의하십니까?";
+                var asking="My diary 게시판은 '진영이의 일기장'으로 운영되는 게시판입니다.\n비밀 유지를 약속하며, 게시판으로 입장하는 것에 동의하십니까?";
                 var type;
                 type=confirm(asking);
 
                 if(type == true){
-                    window.open("menu3_sub2_page.html"); 
+                    //현재 페이지에서 다른 페이지로의 이동 자바스크립트의 href 표현 방법
+                    window.location.href="menu3_sub2_page.html";
                 }
                 else{
-                    window.open("menu3_page.html"); 
+                    alert("비밀유지에 대한 약속을 하지 않으셨으므로, \nMy diary 게시판의 이동은 거부 됩니다.");
                 }
             }
-
-            function changeColor(id,color){
-                document.getElementById(id).style.background=color;
-            }  
+  
         </script>
         <p><br/></p>
         <p><br/></p>

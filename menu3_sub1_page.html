@@ -23,7 +23,7 @@
             body{background-color:rgb(186,245,186);overflow-x: hidden;}
             header{background-color:white;font-weight:bold;font-size: 40pt;text-align:center; padding:100px;}
             nav a:hover{text-decoration:underline; color:blue;}
-            div{margin:0 auto;width:88%; height:2100px;border-color:green; border-style:solid;border-radius: 30pt;
+            .divstyle{margin:0 auto;width:88%; height:2100px;border-color:green; border-style:solid;border-radius: 30pt;
                 background-color: rgb(232, 247, 232);}
             footer{clear:both;text-align:right; margin:5px;}
 
@@ -44,8 +44,9 @@
             .toptextfont{font-family:"stylefont1";}
             ol li a:hover{text-decoration:underline; color:green;}
             ol li{list-style-type:none;}
-            .menustyle {width:15%;height:100%;border : 0;margin: 1 1 1 1; padding: 0 0 0 0;float: left;position:relative;left:19%;}
-            ul {list-style:none; margin:0; padding:0;height:100%;position:relative;top:-10;font-size:15pt;text-align:center;}
+            .menustyle {width:15%;height:100%;border : 0;margin: 1 1 1 1; padding: 0 0 0 0;float: left;position:relative;left:27%;}
+            .menustyle1 {width:15%;height:100%;border : 0;margin: 1 1 1 1; padding: 0 0 0 0;float: left;position:relative;left:19%;}
+            ul{list-style:none; margin:0; padding:0;height:100%;position:relative;top:-10;font-size:15pt;text-align:center;}
             .menu{position:relative;top:50px;}
             .linkstyle{position:relative;left:50%;font-size: 20pt;font-weight:bold;text-decoration:none;color:black; font-family:"textfont";}
             .font2{position:absolute; left:2%;top:10px;font-family:"stylefont1"; font-size:15px;}
@@ -60,10 +61,6 @@
         <a href="#find05"><img src="image/5_.png" class="fifthstatus" width=80px; height=80px alt="프로젝트로 이동"></a>
 
         <header id="backgroundimg1">
-            <span class="font2">Background-color change:&nbsp;<button onclick="changeColor('top','rgb(186,245,186)');">origin</button>&nbsp;
-            <button onclick="changeColor('top','YellowGreen');">YellowGreen</button><br/><br/>
-            Inner Box color change:&nbsp;<button onclick="changeColor('innerBox','rgb(232, 247, 232)');">origin</button>&nbsp;
-            <button onclick="changeColor('innerBox','Azure');">Azure</button></span>
             <a class="topfont" href="main.html">진영이의 <span class="stylefont">성장 </span>일기</a><img src="image/cocomong.JPG" id="main_img">
         </header>
 
@@ -73,7 +70,6 @@
                     <li class="menustyle"><a class="topfont" href="menu1_page.html" title="Who am I?" >Who am I?</a></li>
                     <li class="menustyle"><a class="topfont" href="menu2_page.html" title="My major">My major</a></li>
                     <li class="menustyle"><a class="topfont" href="menu3_page.html" title="My study"><strong id="nowpage">My study</strong></a></li>
-                    <li class="menustyle"><a class="topfont" href="menu4_page.html" title="Contact">Contact</a></li>
                 </ul>
             </nav>
         <br/>
@@ -81,14 +77,14 @@
         <hr class="line"/>
         <p><br/></p>
 
-        <div id="innerBox">
+        <div id="innerBox" class="divstyle">
             <p><br/></p>
             <nav>
                 <ul class="menu">
                 <hr width="60%" class="line"/>
-                    <li class="menustyle"><a class="linkstyle" href="menu3_page.html" title="시간 흐름 기준으로 보는 나의 study">시간별</a></li>
-                    <li class="menustyle"><a class="linkstyle" href="menu3_sub1_page.html" title="주제를 기준으로 보는 나의 study"><strong id="nowpage1">주제별</strong></a></li>
-                    <li class="menustyle"><a class="linkstyle" onclick="check()" href="menu3_sub2_page.html" title="나의 study diary">my diary</a></li>
+                    <li class="menustyle1"><a class="linkstyle" href="menu3_page.html" title="시간 흐름 기준으로 보는 나의 study">시간별</a></li>
+                    <li class="menustyle1"><a class="linkstyle" href="menu3_sub1_page.html" title="주제를 기준으로 보는 나의 study"><strong id="nowpage1">주제별</strong></a></li>
+                    <li class="menustyle1"><a class="linkstyle" onclick="check()" href="#" title="나의 study diary">my diary</a></li>
                 </ul>
             </nav>
             <p><br/></p>
@@ -110,6 +106,7 @@
                     <li class="textfont">1학년 2학기:주식 스터디 참여 (<a class="blue" target="_blank" href="https://drive.google.com/drive/folders/1CMmCCaNKE5Z0DL8NDhtEY3z4qE1RZah6?usp=sharing">관련 링크</a>)</li>
                     <li class="textfont">1학년 겨울 방학:웹프로그래밍 스터디 참여 (<a class="blue" target="_blank" href="https://github.com/Websookmyung">관련 링크</a>)</li>
                     <li class="textfont">2학년 1학기:자바와 데이터구조 스터디 참여 (<a class="blue" target="_blank" href="https://github.com/future-developerss">관련 링크</a>)</li>
+                    <li class="textfont">2학년 여름 방학:알고리즘 스터디 참여 (<a class="blue" target="_blank" href="https://github.com/zhenying2/algorithm-solving">관련 링크</a>)</li>
                 </ul>
                 <br/>
                 
@@ -123,7 +120,7 @@
 
                 <ul><br/>
                     <li class="textfont">(<a class="blue" target="_blank" href="https://snowe.sookmyung.ac.kr/club/front/main/index/mainIndex.do?clubId=ITleader">링크: IT'S U 홈페이지</a>)</li>
-                    <li class="textfont">하는 일: 교내 IT 서비스 모니터리 및 시범 테스트, 자체 세미나 및 특강</li>
+                    <li class="textfont">하는 일: 교내 IT 서비스 모니터링 및 시범 테스트, 자체 세미나 및 특강</li>
                     <li class="textfont">맡은 일: 잇츠유의 디자인팀원으로 웹진 디자인 및 제작과 교내 IT 서비스 점검 및 확인 모니터링을 하고 있다.</li>
                 </ul><br/>
                 
@@ -157,8 +154,17 @@
                 <p><br/></p>
                 <p><br/></p>
 
-                <ul><br/><br/>
-                    <li class="textfont">2021 1학기에 IT공학과에서 진행되는 IPS(<strong>I</strong>T <strong>P</strong>roject competition of <strong>S</strong>ookmyung)에 참여 예정이다.</li>
+                <ul><br/>
+                    <li class="textfont"><strong>***2021 1학기***</strong></li><br/>
+                    <li class="textfont">1. 교내 IPS 대회 참여 (여행메이트, 여행정보 공유하는 커뮤니티 웹사이트 만드는 프로젝트를 진행하였다.)
+                    (<a class="blue" target="_blank" href=https://github.com/zhenying2/IPS_tripstargram>관련 링크</a>)</li>
+                    <li class="textfont">2. 객체지향프로그래밍 수업 일환의 프로젝트 진행 (선택 어려움 겪는 사람을 위한 솔루션 프로그램 using java)
+                    (<a class="blue" target="_blank" href=https://github.com/future-developerss/FinalResult>관련 링크</a>)</li><br/>
+
+                    <li class="textfont"><strong>***2021 여름 방학***</strong></li><br/>
+                    <li class="textfont">1. 교내 MEIT 대회 참여 (공항 컨베이너벨트에 자신의 수하물 출하/수거 및 위치 알림 프로젝트를 진행하였다.)<br/>
+                    <span>  meit 프로젝트_독학공부 (<a class="blue" target="_blank" href=https://github.com/zhenying2/Android>관련 링크</a>)</span><br/>
+                    <span>  meit 프로젝트_with sw (<a class="blue" target="_blank" href=https://github.com/zhenying2/meit_sw-code>관련 링크</a>)</span></li><br/>
                 </ul><br/>
                 
             </ol> 
@@ -171,21 +177,18 @@
 
         <script type="text/javascript">
             function check(){
-                var asking="My diary 게시판은 '진영이의 일기장'으로 운영되는 게시판입니다.\n 비밀 유지를 약속하며, 게시판으로 입장하는 것에 동의하십니까?";
+                var asking="My diary 게시판은 '진영이의 일기장'으로 운영되는 게시판입니다.\n비밀 유지를 약속하며, 게시판으로 입장하는 것에 동의하십니까?";
                 var type;
                 type=confirm(asking);
 
                 if(type == true){
-                    window.open("menu3_sub2_page.html"); 
+                    window.location.href="menu3_sub2_page.html";
                 }
                 else{
-                    window.open("menu3_sub1_page.html"); 
+                    alert("비밀유지에 대한 약속을 하지 않으셨으므로, \nMy diary 게시판의 이동은 거부 됩니다.");
                 }
             }
 
-            function changeColor(id,color){
-                document.getElementById(id).style.background=color;
-            }  
         </script>
         <footer class="topfont">&#169;copyright는 작성자 김진영에게 있습니다.<br/>배경 음악 및 음악에 대한 저작권은 모두 가수 및 관련업계에 있습니다.</footer>
     </body>
