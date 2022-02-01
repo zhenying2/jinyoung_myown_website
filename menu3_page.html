@@ -22,7 +22,7 @@
             body{background-color:rgb(186,245,186);overflow-x: hidden;}
             header{background-color:white;font-weight:bold;font-size: 40pt;text-align:center; padding:100px;}
             nav a:hover{text-decoration:underline; color:blue;}
-            .divstyle{margin:0 auto;width:88%; height:5800px;border-color:green; border-style:solid;border-radius: 30pt;
+            .divstyle{margin:0 auto;width:88%; height:7800px;border-color:green; border-style:solid;border-radius: 30pt;
                 background-color: rgb(232, 247, 232);}
             footer{clear:both;text-align:right; margin:5px;}
 
@@ -30,6 +30,7 @@
             .firststatus{z-index:3;position:fixed; right:0px; top:115px;}
             .secondstatus{z-index:4;position:fixed; right:0px; top:195px;}
             .thirdstatus{z-index:5;position:fixed; right:0px; top:275px;}
+            .fourthstatus{z-index:6;position:fixed; right:0px; top:355px;}
 
             .menustyle {width:15%;height:100%;border : 0;margin: 1 1 1 1; padding: 0 0 0 0;float: left;position:relative;left:27%;}
             .menustyle1 {width:15%;height:100%;border : 0;margin: 1 1 1 1; padding: 0 0 0 0;float: left;position:relative;left:19%;}
@@ -38,7 +39,7 @@
             .linkstyle{position:relative;left:50%;font-size: 20pt;font-weight:bold;text-decoration:none;color:black; font-family:"textfont";}
             .position{position:relative;right:510px;top:80px;}
             .subtitle{font-family:"font";font-size:23px;font-weight:bold;float:left;}
-            .verticalLine {position:relative;left:50%; border-left: thick solid green;float:left;height:5580px;}
+            .verticalLine {position:relative;left:50%; border-left: thick solid green;float:left;height:7500px;}
             .subcontent{font-family:"textfont";float:left;}
             .blue{color:blue;}
             .font2{position:absolute; left:2%;top:10px;font-family:"stylefont1"; font-size:15px;}
@@ -50,6 +51,7 @@
         <a href="#find01"><img src="image/one.png" class="firststatus" width=80px; height=80px alt="1-1로 이동"></a>
         <a href="#find02"><img src="image/two.png" class="secondstatus" width=80px; height=80px alt="1-2로 이동"></a>
         <a href="#find03"><img src="image/three.png" class="thirdstatus" width=80px; height=80px alt="2-1로 이동"></a>
+        <a href="#find04"><img src="image/four.png"class="fourthstatus" width=80px; height=80px alt="2-2로 이동"></a>
 
         <header id="backgroundimg1">
             <a class="topfont" href="main.html">진영이의 <span class="stylefont">성장 </span>일기</a><img src="image/cocomong.JPG" id="main_img">
@@ -234,10 +236,79 @@
                             </dd>
                         </dl>
                     </li>
-
                     <li>
                         <dl>
                             <dt><canvas id="myCanvas3" width="300" height="100" class="position"></canvas></dt>
+                            <dd id="find04"><br/>
+                                <p class="subtitle">수강한 전공과목</p>
+                                <p><br/></p>
+                                <p class="subcontent">IT공학: 모바일프로그래밍, 웹프로그래밍 응용, 서버운영 및 보안<br/>
+                                통계학과: 수리통계학2, 통계수학2, 실험계획과 분산분석, 통계프로그래밍(R)</p>
+                                <p><br/></p>
+                                <p><br/></p>
+                                <p class="subtitle">나의 활동</p>
+                                <p><br/></p>
+                                <p class="subcontent"><strong>1. 안드로이드의 매력에 빠지다!</strong><br/><br/><br/>
+                                    <video id="app1" controls src="video/app1.mp4" width="300" height="300"></video>&nbsp;
+                                    <video id="app2" controls src="video/app2.mp4" width="300" height="300"></video><br/><br/>
+                                    학과 '모바일프로그래밍' 전공 수업에서 만든 프로그램 뿐 아니라, 이번학기 청년 정책 알림 서비스,<br/>
+                                    운동/식단 관리 서비스, 공구장터 서비스를 만들면서 앱이 가진 매력을 느끼는 계기가 되었습니다.<br/>
+                                    링크, 마우스클릭으로 페이지가 이동되는 웹에서와는 달리, <br/>
+                                    앱은 음성/사람의 손의 움직임으로 동작하는 점이 앱에 관심을 가지게 된 계기가 되었습니다. <br/>
+                                    클라우드(서버)를 통해 앱을 개발하면서, 안드로이드와 클라우드에 깊은 관심을 가지게 되었고, <br/>
+                                    안드로이드의 java, kotlin 언어 공부 뿐 아니라 ios/android 크로스 플랫폼인 flutter도 공부했습니다. <br/>
+                                    정적인 데이터 기반의 서비스 개발은 어느정도의 한계가 있다는 것을 느껴서, <br/>
+                                    실시간 데이터 변동 기반의 서비스를 만들고 싶다는 생각을 가지게 되었습니다.<br/>
+                                    특별히 추천 서비스 기술을 구현하는 것에 관심을 가져 머신러닝/딥러닝 기술을 공부하며, <br/>
+                                    깊이있고 폭이 넓은 안드로이드/클라우드 전문 개발자가 되기 위해 노력하고 있습니다.<br/>
+                                </p>
+                                <br/>
+                                <p><br/></p>
+                                <p><br/></p>
+                                <br/>
+                                <p class="subcontent"><strong>2. 전공 관련 활동</strong><br/><br/>
+                                    이번 학기는 GDSC Sookmyung이라는 개발동아리에 들어가 활동하기 시작했습니다.<br/> 
+                                    전공을 공부하면서, 기존의 학과 전공 수업이나 스터디, 개별 공부만으로는 실력 향상에 있어<br/>
+                                    어느 정도 한계가 있다고 느껴, 개발 동아리에 지원하여 활동하게 된 계기가 되었습니다.<br/>
+                                    학과에서는 다루지 않으나, 현재 많이 쓰이거나 새로운 it언어나 기술을 함께 공부하고,<br/>
+                                    동아리원들과 함께 토이프로젝트 등을 수행하면서, 개발 실력 향상 뿐만 아니라,<br/>
+                                    함께 성장하는 즐거움과 커뮤니케이션 능력의 발전에도 큰 영향을 주었다고 생각합니다. <br/><br/>
+                                    또, 이번 학기에는 처음으로 회사에서 개발관련 업무를 해봤다는 점에서도 의의가 있었습니다.<br/>
+                                    처음 지원할 때 생각했던 것과는 달리, 업무가 주어졌을 때 제가 가진 능력이 부족하다는 것을 느꼈으나<br/>
+                                    함께하는 팀원들과 서로 모르는 것을 공유하고 도와가면서, 결국 회사 홈페이지를 완성할 수 있었습니다.<br/>
+                                    실전 현장에서의 개발 경험은, 어떤 것에 앞으로 더 몰두하여 공부해야 할지에 대해<br/>
+                                    진지하게 고민해보는 불씨를 만들어 주었기에 갚진 시간이었다고 생각합니다.<br/><br/>
+                                    (React 6주 스터디로 처음 배우고, 바로 React로 회사 홈페이지 구현...)<br/>
+                                    (불가능도 가능하게 만드는 인간의 의지와 노력을 다시 한번 느끼게 되었다..)<br/><br/>
+                                </p>
+                                <br/>
+                                <p><br/></p>
+                                <p><br/></p>
+                                <br/>
+                                <p class="subcontent"><strong>3. 프로젝트</strong><br/><br/>
+                                    모바일프로그래밍 학과 수업의 기말과제로 팀프로젝트를 진행했습니다<br/> 
+                                    운동(만보기)과 식단을 관리하는 앱으로, 안드로이드(java)를 사용하였습니다.<br/><br/>
+                                    교내 sw해커톤에 참여해 '청년 정책 알림 서비스' 앱을 만들었습니다. <br/>
+                                    청년관련 정책과 정책 관련 용어를 정리하여 보기 좋게 알려주는 앱으로, <br/>
+                                    해당 앱에 정적인 데이터를 사용하면서 서비스의 한계를 느껴, <br/>
+                                    실시간 데이터 기반의 앱(서비스)를 구현해 보고 싶다는 생각으로 ML공부를 시작한 계기가 되었습니다.<br/>
+                                    GDSC Sookmyung 개발 동아리에서, 6주간 React와 Android(Kotlin)을 사용한 스터디를 진행한 이후,<br/>
+                                    Android(Kotlin)을 사용하여, 공구장터 서비스를 만드는 토이 프로젝트를 진행했습니다.<br/>
+                                    처음으로, 앱/웹/백 으로 팀원을 분리하여 프로젝트를 진행했다는 점에서 의의가 있었고,<br/>
+                                    스터디 이후, 토이프로젝트를 진행하면서 스터디 내용을 체화할 수 있어서 좋았습니다.<br/><br/>
+                                    관련 링크는 아래에서 확인하실 수 있습니다. <br/>
+                                    모바일프로그래밍 기말 프로젝트(<a class="blue" target="_blank" href=https://github.com/zhenying2/Android-Flutter/tree/master/Class/Exercise>관련 링크</a>)<br/>
+                                    청년 정책 알림 서비스 (<a class="blue" target="_blank" href=https://github.com/Sookmyung-Software-Hackathon/SMSWH_Team33>관련 링크</a>)<br/>
+                                    공구장터 서비스 (<a class="blue" target="_blank" href=https://github.com/GDSC-Team2>관련 링크</a>)<br/>
+                                    <br/><br/>
+                                </p>
+                            </dd>
+                        </dl>
+                    </li>
+
+                    <li>
+                        <dl>
+                            <dt><canvas id="myCanvas4" width="300" height="100" class="position"></canvas></dt>
                         </dl>
                     </li>
                 </ul>
@@ -293,6 +364,21 @@
             myContext.stroke();
 
             var canvas=document.getElementById("myCanvas3");
+            var myContext=canvas.getContext("2d");
+            var text1="2학년 2학기";
+            
+            myContext.font="bold 24pt Tahoma";
+            myContext.fillStyle="green";
+            myContext.fillText(text1,50,50);
+            myContext.beginPath();
+            myContext.moveTo(250,40);
+            myContext.lineTo(280,40);
+            myContext.lineWidth="5";
+            myContext.strokeStyle="green";
+            myContext.lineCap="round";
+            myContext.stroke();
+
+            var canvas=document.getElementById("myCanvas4");
             var myContext=canvas.getContext("2d");
             var text1="현재도 성장중";
             
